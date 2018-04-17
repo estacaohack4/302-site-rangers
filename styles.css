@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+header{
+    background-color: #44f;
+    overflow: auto;
+    color: white;
+    display: flex;
+}
+
+header span{
+    margin-top: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: cornflowerblue;
+}
+
+.sidebar{
+    background-color: #88f;
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.sidebar li{
+    color: white;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+section img{
+    width: 33%;
+    height: 300px;
+    transition: 1s;
+}
+
+section img:nth-child(1){
+    transform: translateX(-100%);
+}
+
+section img:nth-child(2){
+    transform: translateX(-200%);
+}
+
+section img:nth-child(3){
+    transform: translateX(-300%);
+}
